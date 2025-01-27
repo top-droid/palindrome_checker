@@ -78,6 +78,13 @@ body {
     background-color: var(--text-color-1);
 }
 
+#result {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+
+
 /* fact */
 #fact-container {
     background-color: green;
@@ -85,3 +92,9 @@ body {
     padding: 1rem;
 }
 
+
+/* extra */
+
+.hidden {
+    visibility: hidden;
+}
