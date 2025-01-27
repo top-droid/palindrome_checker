@@ -2,7 +2,7 @@
 const input = document.getElementById("text-input")
 const button = document.getElementById("check-btn")
 const result = document.getElementById("result")
-const regExpPattern = /\W/gi;
+const regExpPattern = /\W|_/gi;
 
 
 // function declarations
@@ -36,7 +36,9 @@ const requiredInput = () => {
 
 // regex removes punctuation, spaces and symbols
 const cleanInput = () => {
-    return input.value.toLowerCase().replace(regExpPattern, "");
+    const cleanedInput = input.value.toLowerCase().replace(regExpPattern, "");
+    return cleanedInput;
+     
 }
 
 // invert cleanInput
